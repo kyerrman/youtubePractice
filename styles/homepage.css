@@ -1,0 +1,19 @@
+body {
+  font-family: Roboto;
+}
+
+.search-bar {
+  display: block;
+} 
+
+.thumbnail {
+  width: 300px;
+}
+
+.video-preview {
+  display: inline-block;
+}
+
+.video-title {
+  width: 300px;
+}
