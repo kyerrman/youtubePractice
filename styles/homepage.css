@@ -12,8 +12,15 @@ body {
 
 .video-preview {
   display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
 }
 
 .video-title {
   width: 300px;
+}
+
+.channel-photo,
+.video-info {
+  display: inline-block;
 }
