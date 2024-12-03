@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- loads Roboto font from google and 
+   applies to the page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>YouTube | Home</title>
   <link rel="stylesheet" href="styles/homepage.css">
   <meta charset="UTF-8">
@@ -12,161 +17,241 @@
   <div class="all-content-homepage">
     <input type="text" class="search-bar" placeholder="Search">
 
-    <!-- tab that contains all preview elements -->
-    <div class="video-preview">
+    <div class="video-previews-grid">
+      <!-- tab that contains all preview elements -->
+      <div class="video-preview">
 
-      <!-- thumbnail preview -->
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="images/thumbnails/marques-brownlee.webp" alt="Marques Brownlee">
-      </div>
-
-      <!-- Video title, channel photo
-       and other details of video -->
-      <div class="video-info-div">
-        <div class="channel-photo-div">
-          <img class="profile-picture" src="images/profiles/marques-brownlee.jpg" alt="">
+        <!-- thumbnail preview -->
+        <div class="thumbnail-div">
+          <img class="thumbnail" src="images/thumbnails/marques-brownlee.webp" alt="Marques Brownlee">
         </div>
 
-        <div class="video-info">
+        <!-- Video title, channel photo
+        and other details of video -->
+        <div class="video-info-div">
+          <div class="channel-photo-div">
+            <img class="profile-picture" src="images/profiles/marques-brownlee.jpg" alt="">
+          </div>
 
-          <!-- video title -->
-          <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-          </p>
+          <div class="video-info">
+
+            <!-- video title -->
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            
+            <!-- video author -->
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+
+            <!--  -->
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
           
-          <!-- video author -->
-          <p class="video-author">
-            Marques Brownlee
-          </p>
-
-          <!--  -->
-          <p class="video-stats">
-            3.4M views &#183; 6 months ago
-          </p>
         </div>
         
-      </div>
-      
 
-      
-    </div>
-
-    <!-- 2nd tab for video preview -->
-    <div class="video-preview">
-
-      <!-- thumbnail preview -->
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="images/thumbnails/fc-pro-open.webp" alt="EA SPORTS FC Pro">
-      </div>
-
-      <!-- Video title, channel photo
-       and other details of video -->
-      <div class="video-info-div">
-        <div class="channel-photo-div">
-          <img class="profile-picture" src="images/profiles/ea-sports-fc-pro.jpg" alt="">
-        </div>
-
-        <div class="video-info">
-
-          <!-- video title -->
-          <p class="video-title">
-            FC Pro | Open 25 Match Week 1 - Group A
-          </p>
-          
-          <!-- video author -->
-          <p class="video-author">
-            EA SPORTS FC Pro
-          </p>
-
-          <!--  -->
-          <p class="video-stats">
-            12M views &#183; 3 minutes ago 
-          </p>
-        </div>
         
       </div>
-      
 
-      
-    </div>
+      <!-- 2nd tab for video preview -->
+      <div class="video-preview">
 
-    <!-- 3rd video preview -->
-    <div class="video-preview">
-
-      <!-- thumbnail preview -->
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="images/thumbnails/god-of-war.webp" alt="WesNemo">
-      </div>
-
-      <!-- Video title, channel photo
-       and other details of video -->
-      <div class="video-info-div">
-        <div class="channel-photo-div">
-          <img class="profile-picture" src="images/profiles/wes-nemo.jpg" alt="">
+        <!-- thumbnail preview -->
+        <div class="thumbnail-div">
+          <img class="thumbnail" src="images/thumbnails/fc-pro-open.webp" alt="EA SPORTS FC Pro">
         </div>
 
-        <div class="video-info">
+        <!-- Video title, channel photo
+        and other details of video -->
+        <div class="video-info-div">
+          <div class="channel-photo-div">
+            <img class="profile-picture" src="images/profiles/ea-sports-fc-pro.jpg" alt="">
+          </div>
 
-          <!-- video title -->
-          <p class="video-title">
-            God of War Just Got BIG NEWS...
+          <div class="video-info">
 
-          </p>
+            <!-- video title -->
+            <p class="video-title">
+              FC Pro | Open 25 Match Week 1 - Group A
+            </p>
+            
+            <!-- video author -->
+            <p class="video-author">
+              EA SPORTS FC Pro
+            </p>
+
+            <!--  -->
+            <p class="video-stats">
+              12M views &#183; 3 minutes ago 
+            </p>
+          </div>
           
-          <!-- video author -->
-          <p class="video-author">
-            WesNemo
-          </p>
-
-          <!--  -->
-          <p class="video-stats">
-            75K views &#183; 7 days ago
-          </p>
         </div>
         
-      </div>
-      
 
-      
-    </div>
-
-    <!-- 4th video preview -->
-    <div class="video-preview">
-
-      <!-- thumbnail preview -->
-      <div class="thumbnail-div">
-        <img class="thumbnail" src="images/thumbnails/mrwhosetheboss-video.webp" alt="Mrwhosetheboss">
-      </div>
-
-      <!-- Video title, channel photo
-       and other details of video -->
-      <div class="video-info-div">
-        <div class="channel-photo-div">
-          <img class="profile-picture" src="images/profiles/mrwhosetheboss.jpg" alt="">
-        </div>
-
-        <div class="video-info">
-
-          <!-- video title -->
-          <p class="video-title">
-            I tested the Craziest Xiaomi Gadgets!
-          </p>
-          
-          <!-- video author -->
-          <p class="video-author">
-            Mrwhosetheboss
-          </p>
-
-          <!--  -->
-          <p class="video-stats">
-          7.9M views &#183; 2 weeks ago
-          </p>
-        </div>
         
       </div>
-      
 
-      
+      <!-- 3rd video preview -->
+      <div class="video-preview">
+
+        <!-- thumbnail preview -->
+        <div class="thumbnail-div">
+          <img class="thumbnail" src="images/thumbnails/god-of-war.webp" alt="WesNemo">
+        </div>
+
+        <!-- Video title, channel photo
+        and other details of video -->
+        <div class="video-info-div">
+          <div class="channel-photo-div">
+            <img class="profile-picture" src="images/profiles/wes-nemo.jpg" alt="">
+          </div>
+
+          <div class="video-info">
+
+            <!-- video title -->
+            <p class="video-title">
+              God of War Just Got BIG NEWS...
+
+            </p>
+            
+            <!-- video author -->
+            <p class="video-author">
+              WesNemo
+            </p>
+
+            <!--  -->
+            <p class="video-stats">
+              75K views &#183; 7 days ago
+            </p>
+          </div>
+          
+        </div>
+        
+
+        
+      </div>
+
+      <!-- 4th video preview -->
+      <div class="video-preview">
+
+        <!-- thumbnail preview -->
+        <div class="thumbnail-div">
+          <img class="thumbnail" src="images/thumbnails/mrwhosetheboss-video.webp" alt="Mrwhosetheboss">
+        </div>
+
+        <!-- Video title, channel photo
+        and other details of video -->
+        <div class="video-info-div">
+          <div class="channel-photo-div">
+            <img class="profile-picture" src="images/profiles/mrwhosetheboss.jpg" alt="">
+          </div>
+
+          <div class="video-info">
+
+            <!-- video title -->
+            <p class="video-title">
+              I tested the Craziest Xiaomi Gadgets!
+            </p>
+            
+            <!-- video author -->
+            <p class="video-author">
+              Mrwhosetheboss
+            </p>
+
+            <!--  -->
+            <p class="video-stats">
+            7.9M views &#183; 2 weeks ago
+            </p>
+          </div>
+          
+        </div>
+        
+
+        
+      </div>
+
+      <!-- 5th preview -->
+      <div class="video-preview">
+
+        <!-- thumbnail preview -->
+        <div class="thumbnail-div">
+          <img class="thumbnail" src="images/thumbnails/javascript-course.webp" alt="SuperSimpleDev">
+        </div>
+
+        <!-- Video title, channel photo
+        and other details of video -->
+        <div class="video-info-div">
+          <div class="channel-photo-div">
+            <img class="profile-picture" src="images/profiles/super-simple-dev.jpg" alt="">
+          </div>
+
+          <div class="video-info">
+
+            <!-- video title -->
+            <p class="video-title">
+              JavaScript Tutorial Full Course - Beginner to Pro (2024)
+            </p>
+            
+            <!-- video author -->
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+
+            <!--  -->
+            <p class="video-stats">
+              2.8M views &#183; 6 months ago
+            </p>
+          </div>
+          
+        </div>
+        
+
+        
+      </div>
+
+      <!-- 6th preview -->
+      <div class="video-preview">
+
+        <!-- thumbnail preview -->
+        <div class="thumbnail-div">
+          <img class="thumbnail" src="images/thumbnails/guardians-of-the-galaxy.avif" alt="The Canadian Lad">
+        </div>
+
+        <!-- Video title, channel photo
+        and other details of video -->
+        <div class="video-info-div">
+          <div class="channel-photo-div">
+            <img class="profile-picture" src="images/profiles/the-canadian-lad.jpg" alt="">
+          </div>
+
+          <div class="video-info">
+
+            <!-- video title -->
+            <p class="video-title">
+              I Watched Guardians of the Galaxy Vol. 3 in 0.25x Speed and Here's What I Found
+            </p>
+            
+            <!-- video author -->
+            <p class="video-author">
+              The Canadian Lad
+            </p>
+
+            <!--  -->
+            <p class="video-stats">
+              587K views &#183; 1 year ago
+            </p>
+          </div>
+          
+        </div>
+        
+
+        
+      </div>
     </div>
     
   </div>

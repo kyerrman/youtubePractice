@@ -2,6 +2,7 @@ body {
   font-family: Roboto;
 }
 
+/* removing all default styling on paragraph tag */
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -11,45 +12,40 @@ p {
   display: block;
 } 
 
-.thumbnail {
-  width: 300px;
+.video-previews-grid {
+  display: grid;
+  
+  /* video previews have 3 colums
+  and take up equal space on page */
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
 }
 
 .thumbnail-div {
   margin-bottom: 12px;
 }
 
-.video-preview {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
+.thumbnail {
+  width: 100%;
 }
 
-.video-title {
-  /* width: 300px; */
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 13px;
-}
-
-.channel-photo-div,
-.video-info {
-  display: inline-block;
-}
-
-.channel-photo-div {
-  width: 50px;
-  vertical-align: top;
-}
-
-.video-info {
-  width: 200px;
+.video-info-div {
+  display: grid;
+  grid-template-columns: 50px 1fr; /* profile photo takes 50px, and the video info
+  takes the remaining free space (1fr)*/
 }
 
 .profile-picture {
   width: 70%;
   border-radius: 50%;
+}
+
+.video-title {
+  font-weight: 450;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 13px;
 }
 
 .video-author,
