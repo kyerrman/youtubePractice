@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  height: 75px;
+}
+
+.left-section,
+.right-section {
+  background-color: aqua;
+}
+
+.middle-section {
+  background-color: aquamarine;
+  flex: 1;
+  margin-left: 60px;
+  margin-right: 36px;
+  max-width: 500px;
+}
+
+.left-section {
+  width: 160px;
+}
+
+.right-section {
+  width: 200px;
+}

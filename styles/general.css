@@ -1,5 +1,6 @@
 body {
   font-family: Roboto;
+  margin: 0;
 }
 
 /* removing all default styling on paragraph tag */
