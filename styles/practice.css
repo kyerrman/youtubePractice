@@ -33,6 +33,7 @@
   margin-left: 50px;
 } */
 
+/*
 body {
   font-family: Roboto, Arial;
 }
@@ -47,7 +48,6 @@ p {
 }
 
 .image-div {
-  /* border: solid; */
   margin-bottom: 10px;
 }
 
@@ -94,4 +94,70 @@ button:hover {
 
 button:active {
   opacity: 0.6;
+}
+
+*/
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: Roboto, Arial;
+}
+
+.inboxes {
+  width: 400px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  /* border: solid; */
+}
+
+.all-inboxes {
+  margin-bottom: 20px;
+}
+
+.inbox-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.inbox-profile {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.profile-picture {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.inbox-content {
+  flex: 1;
+}
+
+.inbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.inbox-name,
+.inbox-heading {
+  font-weight: 600;
+}
+
+.inbox-heading {
+  margin-bottom: 3px;
+}
+
+.inbox-time,
+.message-content {
+  color: rgb(96, 96, 96);
 }
