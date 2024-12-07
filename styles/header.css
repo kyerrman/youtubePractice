@@ -2,12 +2,26 @@
   display: flex;
   flex-direction: row;
   justify-content:space-between;
-  height: 75px;
+  height: 55px;
 }
 
-.left-section,
 .right-section {
   background-color: aqua;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  width: 24px;
+  margin-right: 25px;
+  margin-left: 23px;
+}
+
+.youtube-logo {
+  width: 90px;
 }
 
 .middle-section {
@@ -16,10 +30,6 @@
   margin-left: 60px;
   margin-right: 36px;
   max-width: 500px;
-}
-
-.left-section {
-  width: 160px;
 }
 
 .right-section {
