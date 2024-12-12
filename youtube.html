@@ -10,6 +10,7 @@
   <title>YouTube | Home</title>
 
   <!-- styles -->
+  <link rel="stylesheet" href="styles/sidebar.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/videos.css">
@@ -45,11 +46,20 @@
       <!-- right section of header -->
       <div class="right-section">
         <img class="upload-icon" src="images/icons/upload.svg" alt="">
-        <img class="notifications-icon" src="images/icons/notifications.svg" alt="">
+        <div class="notifications-container">
+          <img class="notifications-icon" src="images/icons/notifications.svg" alt="">
+
+          <div class="notifications-count">
+            4
+          </div>
+        </div>
         <img class="my-profile" src="images/profiles/my-profile.jpg" alt="">
       </div>
     </div>
-
+    
+    <div class="sidebar">
+      sidebar
+    </div>
 
     <div class="video-previews-grid">
       <!-- tab that contains all preview elements -->
@@ -58,6 +68,11 @@
         <!-- thumbnail preview -->
         <div class="thumbnail-div">
           <img class="thumbnail" src="images/thumbnails/marques-brownlee.webp" alt="Marques Brownlee">
+
+          <!-- length of video -->
+          <div class="video-length">
+            14:20
+           </div>
         </div>
 
         <!-- Video title, channel photo
