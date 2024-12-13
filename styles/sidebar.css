@@ -4,5 +4,33 @@
   left: 0;
   top: 55px;
   width: 70px;
-  bottom: 0;
+  margin-left: 5px;
+  background-color: white;
+  z-index: 200;
+  
+}
+
+
+.sidebar-link {
+  height: 76px;
+  /* background-color: gray; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar-link div {
+  font-size: 10px;
 }
