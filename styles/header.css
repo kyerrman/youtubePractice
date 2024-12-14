@@ -85,6 +85,13 @@
   border-radius: 0 20px 20px 0;
 
   position: relative;
+  transition: all 0.14s;
+}
+
+.search-button:hover,
+.voice-search-button:hover,
+.notifications-container:hover {
+  background-color: rgb(217, 217, 217);
 }
 
 .search-icon {
@@ -105,7 +112,7 @@
   /* disables opacity when hovering
   over tooltip itself */
   pointer-events: none;
-  transition: opacity 0.2s;
+  transition: all 0.2s;
 }
 
 .search-button:hover .tooltip {
@@ -120,6 +127,7 @@
   border-radius: 20px;
   border: none;
   background-color: #f8f8f8;
+  transition: all 0.15s;
 }
 
 .voice-search-icon {
@@ -141,6 +149,10 @@
 
 .notifications-container {
   position: relative;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 100%;
+  transition: all 0.15s;
 }
 
 .notifications-icon {
@@ -151,13 +163,12 @@
   position: absolute;
   background-color: red;
   color: white;
-  top: -1px;
-  right: -6px;
+  top: 8px;
+  right: 3px;
   font-size: 10px;
   padding: 1px 5px;
   border-radius: 100%;
   border: 2px solid white;
-
 }
 
 .my-profile {

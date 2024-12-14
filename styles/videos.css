@@ -8,13 +8,28 @@
   row-gap: 40px;
 }
 
+.video-preview {
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.video-preview:hover {
+  scale: 1.02;
+
+  .thumbnail {
+    border-radius: 0;
+  }
+}
+
 .thumbnail-div {
   margin-bottom: 12px;
   position: relative;
 }
 
 .thumbnail {
+  border-radius: 14px;
   width: 100%;
+  transition: all .15s
 }
 
 .video-length {
