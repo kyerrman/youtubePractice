@@ -47,11 +47,6 @@
   align-items: center;
 }
 
-.search-bar-div {
-  flex: 1;
-  background-color: aqua;
-}
-
 .search-bar {
   flex: 1;
   height: 36px;
@@ -84,8 +79,17 @@
   background-color: rgb(247, 247, 247);
   border-radius: 0 20px 20px 0;
 
-  position: relative;
   transition: all 0.14s;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.notifications-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-button:hover,
@@ -96,16 +100,22 @@
 
 .search-icon {
   width: 24px;
-  margin-top: 6px;
+ 
 }
 
-.search-button .tooltip {
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.notifications-container .tooltip {
+  font-family: Roboto;
+  font-size: 13px;
   position: absolute;
   background-color: rgb(161, 161, 161);
   color: white;
   padding: 5px 10px;
   bottom: -32px;
-  left: -5px;
+  white-space: nowrap;
+  border-radius: 3px;
 
   opacity: 0;
   
@@ -115,8 +125,11 @@
   transition: all 0.2s;
 }
 
-.search-button:hover .tooltip {
-  opacity: 1;
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notifications-container:hover .tooltip {
+  opacity: 0.8;
 }
 
 .voice-search-button {
@@ -127,7 +140,8 @@
   border-radius: 20px;
   border: none;
   background-color: #f8f8f8;
-  transition: all 0.15s;
+  transition: all 0.15s; /*time to make
+  all transitions fully active*/
 }
 
 .voice-search-icon {

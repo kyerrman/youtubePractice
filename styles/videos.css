@@ -14,7 +14,7 @@
 }
 
 .video-preview:hover {
-  scale: 1.02;
+  /* scale: 1.02; */
 
   .thumbnail {
     border-radius: 0;
@@ -49,11 +49,64 @@
   display: grid;
   grid-template-columns: 50px 1fr; /* profile photo takes 50px, and the video info
   takes the remaining free space (1fr)*/
+
+  position: relative;
 }
 
-.profile-picture {
+.channel-photo-div .profile-picture {
   width: 70%;
   border-radius: 50%;
+} 
+
+/* tooltip */
+.channel-tooltip {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1100;
+
+  top: 40px;
+  left: 10px;
+  padding: 15px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.channel-photo-div:hover .channel-tooltip {
+  opacity: 1;
+}
+
+/* tooltip image */
+.channel-tooltip .channel-profile img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* channel info on tooltip */
+.channel-tooltip .channel-info {
+  flex: 1;
+  white-space: nowrap;
+  
+}
+
+/* tooltip channel name */
+.channel-tooltip .channel-name {
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.channel-tooltip .channel-stats {
+  font-size: 15px;
+  color: rgb(96, 96, 96);
 }
 
 .video-title {
@@ -64,7 +117,7 @@
 }
 
 .video-author,
-.video-stats {
+.video-info .video-stats {
   color: rgb(96, 96, 96);
   font-size: 12px;
 }
