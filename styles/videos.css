@@ -3,9 +3,30 @@
   
   /* video previews have 3 colums
   and take up equal space on page */
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
   row-gap: 40px;
+}
+
+@media (min-width: 1280px) {
+  .video-previews-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .video-previews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media (max-width: 640px) {
+  .video-previews-grid {
+    grid-template-columns: 1fr;
+  }
+  
 }
 
 .video-preview {
