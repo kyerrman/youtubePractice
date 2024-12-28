@@ -10,7 +10,6 @@
   
 }
 
-
 .sidebar-link {
   height: 76px;
   /* background-color: gray; */
@@ -34,4 +33,28 @@
 
 .sidebar-link div {
   font-size: 10px;
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    left: -100%;
+    transition: all 0.3s;
+  }
+}
+
+@media (min-width: 1260px) {
+  .sidebar {
+    width: 150px;
+    padding-left: 10px;
+  }
+  .sidebar-link {
+    flex-direction: initial;
+    justify-content: start;
+    column-gap: 10px;
+    padding: 6px;
+  }
+  
+  .sidebar-link div {
+    font-size: 15px;
+  }
 }
