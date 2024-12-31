@@ -1,4 +1,5 @@
 import {videos} from './videos.js'
+import {toggleSearchBar, toggleSidebar, hamburgerMenu, searchButtonMobile} from './header-sidebar.js'
 
 let videosHTML = ''
 
@@ -67,16 +68,11 @@ document.querySelector('.js-video-previews-grid')
 
 console.log(videos.length)
 
-const sidebar = document.querySelector('.js-sidebar')
-const hamburgerMenu = document.querySelector('.js-hamburger-menu')
-
 hamburgerMenu.addEventListener('click', () => {
+  toggleSidebar()
+  hamburgerMenu.classList.toggle('clicked')
+})
 
-  if (sidebar.style.left === '-100%') {
-    sidebar.style.left = '0'
-  } else {
-    sidebar.style.left = '-100%'
-  }
-
-  
+searchButtonMobile.addEventListener('click', () => {
+  toggleSearchBar()
 })

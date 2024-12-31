@@ -1,5 +1,33 @@
 export const videos = [
   {
+    thumbnail: "images/thumbnails/black-myth-wukong.avif",
+    videoLength: "2:57:10",
+    channelPhoto: "images/profiles/abmos.jpg",
+    channelName: "Abmos",
+    channelStats: "2.12K",
+
+    videoTitle: "Black Myth Wukong Walkthrough - PART 1 (Intro)",
+    videoStats: {
+      views: "298",
+      datePosted: "4 months"
+    }
+  },
+
+  {
+    thumbnail: "images/thumbnails/jehiel-recover-deleted-files.avif",
+    videoLength: "10:47",
+    channelPhoto: "images/profiles/jehiel.jpg",
+    channelName: "Jehiel B. Houmanou",
+    channelStats: "1k",
+
+    videoTitle: "I deleted my files by mistake, but I found this out...|| Teck Tips",
+    videoStats: {
+      views: "400",
+      datePosted: "1 year"
+    }
+  },
+  
+  {
     // marquess
     thumbnail: "images/thumbnails/marques-brownlee.webp",
     videoLength: "14:20",

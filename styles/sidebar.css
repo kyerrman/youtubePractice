@@ -3,6 +3,7 @@
   position: fixed;
   left: 0;
   top: 55px;
+  bottom: 20%;
   width: 70px;
   margin-left: 5px;
   background-color: white;
@@ -35,9 +36,19 @@
   font-size: 10px;
 }
 
+.sidebar-open {
+  left: 0;
+  transition: all 0.3s;
+}
+
 @media (max-width: 640px) {
   .sidebar {
     left: -100%;
+    transition: all 0.3s;
+  }
+
+  .sidebar-open {
+    left: 0;
     transition: all 0.3s;
   }
 }

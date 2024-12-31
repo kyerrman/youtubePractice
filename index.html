@@ -25,9 +25,20 @@
     <!-- header content -->
     <div class="header">
 
+      <!-- search bar for mobile -->
+       <div class="search-bar-mobile js-search-bar-mobile">
+        <input type="text" placeholder="Search">
+       </div>
+      
+
       <!-- left section of header -->
       <div class="left-section">
-        <img class="hamburger-menu js-hamburger-menu" src="images/icons/hamburger-menu.svg">
+        <div class="hamburger-menu js-hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+      </div>
+
         <img class="youtube-logo" src="images/icons/youtube-logo.svg">
       </div>
 
@@ -56,6 +67,15 @@
 
       <!-- right section of header -->
       <div class="right-section">
+        <!-- search button -->
+        <button class="search-button search-button-mobile js-search-button-mobile">
+          <img class="search-icon" src="images/icons/search.svg">
+
+          <div class="tooltip">
+            Search
+          </div>
+        </button>
+
         <!-- upload icon -->
         <div class="upload-icon-container">
           <img class="upload-icon" src="images/icons/upload.svg" alt="">
